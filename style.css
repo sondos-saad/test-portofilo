@@ -17,7 +17,6 @@ body {
   background-color: var(--bg-color);
   color: var(--txt);
   font-family: fantasy;
-
   scroll-behavior: smooth;
 }
 
@@ -99,6 +98,7 @@ nav a:hover {
 /* section stuff */
 .stuff-section {
   padding: var(--padding);
+  border-top: 1px solid var(--hover);
 }
 .stuff-section .text-stuff {
   text-align: center;
@@ -125,6 +125,7 @@ nav a:hover {
   border: 1px solid var(--bg-color);
   box-shadow: var(--box-shadow);
   text-align: center;
+  border-radius: 6px;
 }
 .icon {
   color: var(--background-color);
@@ -170,6 +171,7 @@ nav a:hover {
 /* section portoflio */
 .portofolio-section {
   padding: var(--padding);
+  border-top: 1px solid var(--hover);
 }
 .portofolio-section .text-portofolio {
   text-align: center;
@@ -194,6 +196,7 @@ nav a:hover {
   box-shadow: var(--box-shadow);
   text-align: center;
   margin-left: 10px;
+  border-radius: 6px;
 }
 .por-img {
   width: 100%;
@@ -366,4 +369,492 @@ hr {
 .footer-bottom .center,
 .right {
   border-left: 1px solid var(--hover);
+}
+/* media big tablet */
+@media (min-width: 701px) and (max-width: 1060px) {
+  .container {
+    width: 100%;
+  }
+  /* nav */
+  nav {
+    padding: 15px;
+  }
+  nav a {
+    padding: 15px 20px;
+    font-size: 1.4rem;
+  }
+  /* section home */
+  .home {
+    padding: 4rem 1rem;
+  }
+  .home .image-home img {
+    width: 300px;
+    height: 300px;
+    margin-top: 20%;
+  }
+  .home .text-home {
+    padding-left: 2rem;
+    padding-top: 3rem;
+  }
+  .home .text-home h1 {
+    font-size: 1.5rem;
+  }
+  .home .text-home h1 strong {
+    font-size: 1.7rem;
+  }
+  .home .text-home p {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  .home .text-home button {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    padding: 10px;
+    font-weight: 300;
+    width: 200px;
+  }
+  /* section stuff */
+  .stuff-section {
+    padding: 4rem 1rem;
+    border-top: 1px solid var(--hover);
+  }
+  .stuff-section .text-stuff h2 {
+    font-size: 1.5rem;
+  }
+  .stuff-section .text-stuff p {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+  .stuff-section .box-stuff {
+    margin-top: 2rem;
+  }
+  .stuff-section .box-stuff .item-box {
+    width: 200px;
+    height: 200px;
+    justify-content: space-around;
+  }
+  .icon {
+    font-size: 3rem;
+  }
+  .stuff-section .box-stuff .item-box h3 {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+  }
+  .stuff-section .box-stuff .item-box p {
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+  }
+  .stuff-section p {
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+  .stuff-section .btn button {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    padding: 10px;
+    font-weight: 300;
+    width: 200px;
+  }
+  /* section portoflio */
+  .portofolio-section {
+    padding: 4rem 1rem;
+    border-top: 1px solid var(--hover);
+  }
+  .portofolio-section .text-portofolio h2 {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+
+  .portofolio-section .box-portofolio {
+    display: grid;
+    grid-template-columns: repeat(3, calc(90% / 3));
+    gap: 10px;
+    margin-top: 1rem;
+  }
+  .portofolio-section .box-portofolio .item-box {
+    width: 100%;
+    padding: 10px;
+  }
+  .por-img {
+    width: 100%;
+    height: 150px;
+  }
+
+  .portofolio-section .box-portofolio .item-box h3 {
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+  .portofolio-section .box-portofolio .item-box p {
+    font-size: 0.7rem;
+    letter-spacing: 0.5px;
+    margin-top: 3px;
+  }
+  .portofolio-section .btn button {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    padding: 10px;
+    font-weight: 300;
+    width: 200px;
+  }
+  /* footer */
+  footer {
+    padding: 4rem 1rem;
+  }
+
+  footer .text-footer h3 {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+  footer .text-footer p {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-top: 3px;
+  }
+  .footer-form {
+    width: 80%;
+  }
+
+  .btn-form .btn1 {
+    width: 80px;
+    font-size: 1.2rem;
+  }
+  .btn-form .btn2 {
+    width: 80px;
+    font-size: 1.2rem;
+  }
+  .footer-find {
+    padding: 4rem 1rem;
+    font-size: 1.5rem;
+  }
+  .footer-bottom .left,
+  .footer-bottom .center,
+  .footer-bottom .right {
+    padding: 0 0.5rem;
+    font-size: 0.7rem;
+  }
+}
+/* media tablet */
+@media (min-width: 575px) and (max-width: 700px) {
+  .container {
+    width: 100%;
+  }
+  /* nav */
+  nav {
+    padding: 10px;
+  }
+  nav a {
+    padding: 10px 20px;
+    font-size: 1.3rem;
+  }
+  /* section home */
+  .home {
+    padding: 5rem 0.5rem;
+  }
+  .home .image-home img {
+    width: 200px;
+    height: 200px;
+    margin-top: 50%;
+  }
+  .home .text-home {
+    padding-left: 2rem;
+    padding-top: 3rem;
+  }
+  .home .text-home h1 {
+    font-size: 1.3rem;
+  }
+  .home .text-home h1 strong {
+    font-size: 1.5rem;
+  }
+  .home .text-home p {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  .home .text-home button {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    padding: 10px;
+    font-weight: 300;
+    width: 200px;
+  }
+  /* section stuff */
+  .stuff-section {
+    padding: 5rem 0.5rem;
+    border-top: 1px solid var(--hover);
+  }
+  .stuff-section .text-stuff h2 {
+    font-size: 1.5rem;
+  }
+  .stuff-section .text-stuff p {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+  .stuff-section .box-stuff {
+    margin-top: 2rem;
+  }
+  .stuff-section .box-stuff .item-box {
+    width: 170px;
+    height: 170px;
+    justify-content: space-around;
+  }
+  .icon {
+    font-size: 2rem;
+  }
+  .stuff-section .box-stuff .item-box h3 {
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+  .stuff-section .box-stuff .item-box p {
+    font-size: 0.7rem;
+    letter-spacing: 0.5px;
+  }
+  .stuff-section p {
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+  .stuff-section .btn button {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    padding: 10px;
+    font-weight: 300;
+    width: 200px;
+  }
+  /* section portoflio */
+  .portofolio-section {
+    padding: 5rem 0.5rem;
+    border-top: 1px solid var(--hover);
+  }
+  .portofolio-section .text-portofolio h2 {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+
+  .portofolio-section .box-portofolio {
+    display: grid;
+    grid-template-columns: repeat(2, calc(100% / 2));
+    gap: 10px 20px;
+    margin-top: 1rem;
+  }
+  .portofolio-section .box-portofolio .item-box {
+    width: 250px;
+    padding: 10px;
+  }
+  .por-img {
+    width: 100%;
+    height: 150px;
+  }
+
+  .portofolio-section .box-portofolio .item-box h3 {
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+  .portofolio-section .box-portofolio .item-box p {
+    font-size: 0.7rem;
+    letter-spacing: 0.5px;
+    margin-top: 3px;
+  }
+  .portofolio-section .btn button {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    padding: 10px;
+    font-weight: 300;
+    width: 200px;
+  }
+  /* footer */
+  footer {
+    padding: 5rem 0.5rem;
+  }
+
+  footer .text-footer h3 {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+  footer .text-footer p {
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+    margin-top: 3px;
+  }
+  .footer-form {
+    width: 80%;
+  }
+
+  .btn-form .btn1 {
+    width: 80px;
+    font-size: 1.2rem;
+  }
+  .btn-form .btn2 {
+    width: 80px;
+    font-size: 1.2rem;
+  }
+  .footer-find {
+    padding: 5rem 0.5rem;
+    font-size: 1.5rem;
+  }
+  .footer-bottom .left,
+  .footer-bottom .center,
+  .footer-bottom .right {
+    padding: 0 0.5rem;
+    font-size: 0.7rem;
+  }
+}
+/* media mob */
+@media (max-width: 574px) {
+  .container {
+    width: 100%;
+  }
+  /* nav */
+  nav {
+    padding: 4px;
+  }
+  nav a {
+    padding: 2px 5px;
+    font-size: 1rem;
+  }
+  /* section home */
+  .home {
+    padding: 3rem 0.2rem;
+  }
+  .home .image-home img {
+    width: 100px;
+    height: 100px;
+    margin-top: 50%;
+  }
+  .home .text-home {
+    padding-left: 1rem;
+    padding-top: 2rem;
+  }
+  .home .text-home h1 {
+    font-size: 1rem;
+  }
+  .home .text-home h1 strong {
+    font-size: 1.2rem;
+  }
+  .home .text-home p {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+  }
+  .home .text-home button {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    padding: 5px;
+    font-weight: 300;
+    width: 150px;
+  }
+  /* section stuff */
+  .stuff-section {
+    padding: 3rem 0.2rem;
+    border-top: 1px solid var(--hover);
+  }
+  .stuff-section .text-stuff h2 {
+    font-size: 1rem;
+  }
+  .stuff-section .text-stuff p {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+  }
+  .stuff-section .box-stuff {
+    align-items: center;
+    flex-direction: column;
+  }
+  .stuff-section .box-stuff .item-box {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+  }
+  .icon {
+    font-size: 1.5rem;
+  }
+  .stuff-section .box-stuff .item-box h3 {
+    font-size: 0.8rem;
+    letter-spacing: 0px;
+  }
+  .stuff-section .box-stuff .item-box p {
+    font-size: 0.7rem;
+    letter-spacing: 0.5px;
+  }
+  .stuff-section p {
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+  }
+  .stuff-section .btn button {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    padding: 5px;
+    font-weight: 300;
+    width: 150px;
+  }
+  /* section portoflio */
+  .portofolio-section {
+    padding: 3rem 0.2rem;
+  }
+  .portofolio-section .text-portofolio h2 {
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+
+  .portofolio-section .box-portofolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .portofolio-section .box-portofolio .item-box {
+    width: 250px;
+    padding: 10px;
+  }
+  .por-img {
+    width: 100%;
+    height: 100px;
+  }
+
+  .portofolio-section .box-portofolio .item-box h3 {
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+  }
+  .portofolio-section .box-portofolio .item-box p {
+    font-size: 0.7rem;
+    letter-spacing: 0.5px;
+    margin-top: 3px;
+  }
+  .portofolio-section .btn button {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    padding: 5px;
+    font-weight: 300;
+    width: 150px;
+  }
+  /* footer */
+  footer {
+    padding: 3rem 0.2rem;
+  }
+
+  footer .text-footer h3 {
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+  }
+  footer .text-footer p {
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+    margin-top: 3px;
+  }
+  .footer-form {
+    width: 80%;
+  }
+
+  .btn-form .btn1 {
+    width: 80px;
+    font-size: 1rem;
+  }
+  .btn-form .btn2 {
+    width: 80px;
+    font-size: 1rem;
+  }
+  .footer-find {
+    padding: 3rem 0.2rem;
+    font-size: 1rem;
+  }
+  .footer-bottom .left,
+  .footer-bottom .center,
+  .footer-bottom .right {
+    padding: 0.1rem;
+    font-size: 0.5rem;
+  }
 }
