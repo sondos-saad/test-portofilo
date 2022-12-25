@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   /* font-family: monospace; */
-  font-family: fantasy;
+  font-family: fantasy !important;
   scroll-behavior: smooth;
 }
 :root {
@@ -17,7 +17,7 @@
 body {
   background-color: var(--bg-color);
   color: var(--txt);
-  font-family: fantasy;
+  font-family: fantasy !important;
   scroll-behavior: smooth;
 }
 
